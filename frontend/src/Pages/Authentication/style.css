@@ -1,0 +1,13 @@
+.login-links{
+    justify-content: space-between;
+    display: flex;
+    margin:10px auto
+}
+.login-links .left{
+    text-align: left;
+}
+
+.login-links .right{
+    text-align: right;
+    
+}

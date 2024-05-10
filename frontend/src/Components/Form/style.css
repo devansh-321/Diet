@@ -1,0 +1,255 @@
+
+/* ========================================Input============================================================= */
+
+.input-div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.input-div label{
+    font-size: 1em;
+}
+
+.input-inner-div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border: 1px solid rgba(210,210,210);
+    border-radius: 0.5em;
+    transition: all 0.5s ease-in-out; 
+
+}
+
+.input-inner-div>input{
+    width: 100%;
+    border: none;
+    background: transparent;
+    font-size: 1em;
+    padding: 0.8em 1em;
+    outline: none;
+}
+
+.input-inner-div>input:disabled{
+    background: rgba(0, 0, 0,0.05);
+}
+
+.input-inner-div>input::placeholder{
+    color: rgba(0,0,0,0.2);
+    font-weight: lighter;
+}
+
+.input-inner-div:focus-within {
+    border:1px solid var(--primary-color);
+}
+
+.icon{
+    padding: 0.5em 0.8em;
+    background: transparent;
+    color: grey;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+/* ========================================Input============================================================= */
+
+/* ========================================Form Group============================================================= */
+
+.form-group{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    padding: 0.5em 0;
+    column-gap: 1em;
+}
+
+/* ========================================Form Group============================================================= */
+/* ========================================Form Field============================================================= */
+
+.form-group.column-2 .form-field{
+    flex-grow: 1;
+    width: 45%;
+}
+
+.form-group.column-1 .form-field{
+    flex-grow: 1;
+    width: 100%;
+}
+
+
+@media only screen and (min-width: 100px) {
+    .field-group.sm .form-field{
+        width: 100%;
+        flex-grow: 1;
+    }
+    .form-group.column-2 .form-field{
+        flex-grow: 1;
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .field-group.md .form-field{
+        width: 45%;
+        flex-grow: 1;
+    }
+    .form-group.column-2 .form-field{
+        flex-grow: 1;
+        width: 45%;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .field-group.lg .form-field{
+
+    }
+}
+@media only screen and (min-width: 1500px) {
+    
+}
+
+/* ========================================Form Field============================================================= */
+/* ========================================Dropdown============================================================= */
+
+.dropdown-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.dropdown-inner-div{
+    width: 100%;
+    border: 1px solid rgba(210,210,210);
+    border-radius: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out; 
+
+}
+
+.dropdown{
+    width: 100%;
+    padding: 0.8em;
+    outline: none;
+    font-size: 1em;
+    border: none;
+    color: grey;
+    background: transparent;
+}
+
+.dropdown-inner-div:focus-within {
+    border-color: var(--theme-color-a);
+}
+
+/* ========================================Dropdown============================================================= */
+
+/* ========================================popup============================================================= */
+
+.popup-section{
+    position: fixed;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    padding: 1em;
+    height: fit-content;
+    height: 100vh;
+}
+
+.popup-background{
+    background: rgba(0, 0, 0,0.3);
+    position: absolute;
+    inset: 0;
+}
+
+.popup-content{
+    /* max-width: 50%; */
+    /* width: 100%; */
+    background: white;
+    z-index: 9999;
+    padding: 1em;
+    border-radius: 0.5em;
+}
+
+.popup-header{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.5em;
+    font-size: 1.1em;
+}
+
+.popup-body{
+    /* padding: em; */
+    padding: 0em 1em 1em 1em ;
+    overflow-y: scroll !important;
+}
+
+@media only screen and (min-width:10px){
+    .popup-content{
+        max-width: 100%;
+        max-height: 90vh;
+        overflow-y: scroll;
+    }
+}
+
+@media only screen and (min-width:500px){
+    
+}
+@media only screen and (min-width:900px){
+    .popup-content{
+        max-width: 70%;
+    }
+}
+@media only screen and (min-width:1200px){
+    .popup-content{
+        max-width: 50%;
+    }
+}
+
+/* ========================================popup============================================================= */
+
+/* ========================================container============================================================= */
+
+.container-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-inner-div{
+    width: 100%;
+    /* max-width: 60em; */
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(8px);
+    padding: 2em;
+    border-radius: 2em;
+}
+
+@media only screen and (min-width: 100px) {
+    .container-inner-div{
+        padding: 0em;
+        max-width: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .container-inner-div{
+        padding: 1em;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .container-inner-div{
+        padding: 2em;
+    }
+}
+
+
+
+/* ========================================container============================================================= */

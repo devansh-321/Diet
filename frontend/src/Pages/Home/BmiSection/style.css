@@ -1,0 +1,140 @@
+.bmi-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10em 2em;
+    background: rgba(0, 0, 0);
+    position: relative;
+}
+
+.bmi-abs-section{
+    position: absolute;
+    inset: 0;
+    background: url('../../../Assets/images/background.png');
+    /* background-repeat: no-repeat; */
+    background-position: center;
+    background-size: cover;
+    opacity: 0.1;
+}
+
+
+.bmi-inner-section{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bmi-inner-section>h2{
+    color: white;
+}
+
+.bmi-inner-section{
+    color: white;
+
+}
+
+.bmi-form-section input{
+    background: #ffffff;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.bmi-form-section{
+    margin-top: 2em;
+    position: relative;
+    z-index: 9;
+    display: flex;
+    gap: 1em;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.bmi-form-section button{
+    /* height: 3.5em; */
+    min-width: 20%;
+    font-weight: 500;
+    font-size: 1.1em;
+}
+
+.bmi-form-section button:hover{
+    color: var(--secondary-color);
+    background: var(--primary-color);
+}
+
+@media only screen and (min-width: 100px){
+    .bmi-inner-section{
+        width: 100%;
+    }
+
+    .bmi-form-section{
+        flex-direction: column;
+    }
+}
+
+
+@media only screen and (min-width: 768px){
+    .bmi-inner-section{
+        width: 90%;
+    }
+
+    .bmi-form-section{
+        flex-direction: row;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .bmi-inner-section{
+        width: 80%;
+    }
+}
+/* ========================================================================== */
+
+.diet-plan-section{
+    width: 100%;
+    height: 100%;
+    background: url('../../../Assets/images/fruits-back.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 2em;
+    position: relative;
+    box-shadow: 0 0 1em 0.2em rgba(255,255,255,0.95) inset;
+}
+
+.diet-plan-abs-section{
+    position: absolute;
+    inset: 0;
+    background: rgba(255,255,255,0.95);
+}
+
+.diet-plan-text-section{
+    z-index: 99;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.diet-plan-text-section>span{
+    font-size: 2em;
+    text-align: center;
+}
+
+@media only screen and (min-width: 100px){
+    .diet-plan-section{
+        padding: 0;
+    }
+}
+
+
+@media only screen and (min-width: 768px){
+    .diet-plan-section{
+        padding: 2;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    
+}

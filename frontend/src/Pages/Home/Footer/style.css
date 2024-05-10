@@ -1,0 +1,141 @@
+.footer-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0);
+    position: relative;
+}
+
+.footer-abs-section{
+    position: absolute;
+    inset: 0;
+    background: url('../../../Assets/images/background.png');
+    background-position: center;
+    background-size: cover;
+    opacity: 0.1;
+}
+
+.footer-inner-section{
+    width: 80%;
+    display: flex;
+    padding: 5em 0;
+    justify-content: center;
+    z-index: 9;
+}
+
+.footer-inner-section{
+    color: white;
+}
+
+.footer-inner-section input{
+    background: #ffffff;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.footer-form-section{
+    position: relative;
+    z-index: 9;
+    display: flex;
+    gap: 1em;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.footer-form-section button{
+    /* height: 3.5em; */
+    min-width: 20%;
+    font-weight: 500;
+    font-size: 1.1em;
+}
+
+.footer-form-section button:hover{
+    color: var(--secondary-color);
+    background: var(--primary-color);
+}
+
+.footer-cards-section{
+    width: 100%;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.footer-social-section{
+    display: flex;
+    gap: 1em;
+}
+
+.footer-social-section a svg{
+    color: #ffffff !important;
+    transition: all 0.3s ease-in-out;
+}
+
+.footer-social-section a svg:hover {
+    color: var(--primary-color) !important;
+}
+
+.footer-cards-section ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.footer-cards-section ul li{
+    display: flex;
+    gap: 1em;
+
+}
+
+.footer-cards-section ul li svg{
+    color: var(--primary-color) !important;
+}
+
+.footer-cards-section ul li a,
+.footer-cards-section ul li p{
+    color: #ffffff;
+    transition: all 0.3s ease-in-out;
+}
+
+.footer-cards-section ul li a:hover{
+    color: var(--primary-color);
+}
+
+.footer-logo a{
+    font-size: 2em;
+    color: var(--primary-color) !important;
+    cursor: pointer;
+}
+
+.footer-cards-section h3{
+    font-size: 1.5em;
+}
+
+@media only screen and (min-width: 100px){
+    .footer-inner-section{
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+
+@media only screen and (min-width: 768px){
+    .footer-inner-section{
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width: 900px){
+    .footer-inner-section{
+        width: 90%;
+        flex-direction: row;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .footer-inner-section{
+        width: 80%;
+    }
+}

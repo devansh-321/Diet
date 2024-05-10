@@ -1,0 +1,158 @@
+
+.auth-layout-section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--secondary-color);
+    font-weight: 350;
+}
+
+.auth-layout-inner-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.auth-layout-left-section{
+    width: 60%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: var(--primary-color);
+}
+
+.auth-layout-abs-div{
+    width: 60%;
+    color: var(--secondary-color);
+}
+
+.auth-layout-abs-div>p{
+    font-weight: 350;
+}
+
+.auth-layout-abs-div>svg{
+    width: 100%;
+}
+
+
+.auth-layout-close-btn{
+    position: absolute;
+    top: 2em;
+    right: 2em;
+}
+
+.auth-layout-close-btn>svg{
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.auth-layout-right-section{
+    width: 40%;
+    padding: 1em 5em;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+
+.auth-layout-right-section>h2{
+    color: var(--primary-color);
+    font-size: 1.8em;
+    font-weight: 550;
+    text-align: center;
+}
+
+.auth-layout-right-section-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.auth-layout-right-section-content>div{
+    text-align: left;
+}
+
+.auth-layout-forgot-div{
+    margin-top: -3em;
+    text-align: right;
+}
+
+.auth-layout-forgot-pass{
+    cursor: pointer;
+    width: fit-content;
+    font-weight: 350;
+    transition: all 0.3s ease-in-out;
+    color: var(--primary-color);
+}
+
+.auth-layout-bottom-text{
+    color: var(--primary-color);
+    font-weight: 350;
+    cursor: pointer;
+}
+
+.auth-layout-or-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    padding: 0 5em;
+}
+
+@media only screen and (min-width: 100px){
+    .auth-layout-left-section{
+        width: 100%;
+        display: none;
+    }
+
+    .auth-layout-right-section{
+        width: 100%;
+        height: 100vh;
+        padding: 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(255, 255, 255, 0.95);
+    }
+
+    .auth-layout-abs-section{
+        position: absolute;
+        inset: 0;
+        z-index: -99;
+        background: url('../../../Assets/images/fruits-back.jpg');
+        
+    }
+}
+
+@media only screen and (min-width: 500px){
+    .auth-layout-right-section{
+        padding: 1em 5em;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .auth-layout-left-section{
+        width: 60%;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .auth-layout-left-section{
+        width: 60%;
+        display: flex;
+    }
+
+    .auth-layout-right-section{
+        width: 40%;
+    }
+
+    .auth-layout-abs-section{
+        display: none;
+    }
+}

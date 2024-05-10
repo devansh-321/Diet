@@ -1,0 +1,96 @@
+.contact-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5em 0;
+    background: rgb(252, 252, 252);
+}
+
+.contact-inner-section{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+}
+
+.contact-image-section{
+    width: 50%;
+    position: relative;
+    padding-top: 45.45%;
+
+}
+.contact-image-abs-section{
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form-section{
+    width: 50%;
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.contact-textarea{
+    width: 100%;
+    border: 1px solid rgb(196, 196, 196);
+    outline: none;
+    border-radius: 0.5em;
+    resize: none;
+    padding: 1em;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact-textarea:focus-within{
+    border: 1px solid var(--primary-color);
+}
+
+@media only screen and (min-width: 100px){
+    .contact-inner-section{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .contact-image-section{
+        width: 100%;
+        padding-top: 110%;
+    }
+
+    .contact-form-section{
+        width: 100%;
+        padding: 1.5em;
+    }
+}
+
+
+@media only screen and (min-width: 768px){
+    .contact-inner-section{
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width: 900px){
+    .contact-inner-section{
+        width: 90%;
+        flex-direction: row;
+    }
+
+    .contact-image-section{
+        width: 50%;
+        padding-top: 45.45%;
+    }
+
+    .contact-form-section{
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .contact-inner-section{
+        width: 80%;
+    }
+}

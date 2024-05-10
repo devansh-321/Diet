@@ -1,0 +1,143 @@
+.header-section{
+    width: 100%;
+    display: flex;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    box-shadow: 0 0 1em 0.1em rgba(0, 0, 0, 0.08);
+}
+
+.header-inner-section{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+
+}
+
+.header-menu-section>ul{
+    display: flex;
+    gap: 0.5em;
+}
+
+.header-menu-section>ul>li>a{
+    padding: 0.5em 1em;
+}
+
+.header-hamburger-section svg{
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.header-menu-section-mobile{
+    display: none;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease-in-out;
+}
+
+.menu-animation{
+    height: 14em;
+    display: flex;
+}
+
+@media only screen and (min-width: 100px){
+    .header-hamburger-section{
+        display: flex;
+    }
+    .header-inner-section{
+        width: 100%;
+    }
+
+    .header-menu-section>ul{
+        display: none;
+    }
+
+    .header-auth-section{
+        display: none;
+    }
+
+    .header-menu-section-mobile{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        background: white;
+        top: 4.5em;
+        left: 0;
+        border-top: 1px solid rgb(245, 245, 245);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-menu-section-mobile ul{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        padding: 1em;
+    }
+
+    .header-menu-section-mobile ul li{
+        width: 100%;
+        height: auto;
+        display: flex;
+    }
+
+    .header-menu-section-mobile ul li a,
+    .header-menu-section-mobile ul li p{
+        width: 100%;
+        padding: 0.5em;
+        color: var(--secondary-color);
+        text-align: center;
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+    }
+
+    .header-menu-section-mobile ul li a:hover,
+    .header-menu-section-mobile ul li p:hover{
+        background: rgba(245, 245, 245, 1) !important;
+    }
+
+    .header-menu-section-mobile ul li p{
+        transition: all 0.3s ease-in-out;
+    }
+
+    .header-menu-section-mobile ul li p:hover{
+        color: var(--primary-color) !important;
+    }
+}
+
+
+@media only screen and (min-width: 768px){
+    .header-hamburger-section{
+        display: none;
+    }
+    .header-menu-section>ul{
+        display: flex;
+    }
+
+    .header-inner-section{
+        width: 90%;
+    }
+
+    .header-auth-section{
+        display: flex;
+    }
+
+    .header-menu-section-mobile{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .header-inner-section{
+        width: 80%;
+    }
+}
+
+
+
